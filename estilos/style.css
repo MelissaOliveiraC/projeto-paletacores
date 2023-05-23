@@ -1,18 +1,19 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
-
 @font-face {
-    font-family: 'CoresFonte';
-    src: url('../fontes/Mansalva-Regular.ttf') format('truetype');
+    font-family: 'NomeSite';
+    src: url('../fontes/Nosifer-Regular.ttf') format('truetype');
     font-weight: normal;
 }
 
 @font-face {
-    font-family: 'TituloFonte';
-    src: url('../fontes/HappyMonkey-Regular.ttf') format('truetype');
+    font-family: 'Link';
+    src: url('../fontes/Jura-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Titulo';
+    src: url('../fontes/Alatsi-Regular.ttf') format('truetype');
 }
 
 :root {
@@ -22,9 +23,10 @@
     --cor3: #f8a17c;
     --cor4: #fca0a8;
 
+    --fonte-nomeSite: 'NomeSite', cursive;
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
-    --fonte-titulo: 'TituloFonte', cursive;
-    --fonte-cores: 'CoresFonte', cursive;
+    --fonte-titulo: 'Titulo', cursive;
+    --fonte-link: 'Link', cursive;
 }
 
 * {
@@ -47,13 +49,13 @@ header {
 }
 
 header > h1{
-    font-family: var(--fonte-titulo);
-    font-size: 3.5em;
+    font-family: var(--fonte-nomeSite);
+    font-size: 2em;
     text-shadow: 3px 1px 6px rgba(0, 0, 0, 0.452)
 }
 header > p {
     font-family: var(--fonte-padrao);
-    font-size: 1.3em;
+    font-size: 1.1em;
     text-shadow: 3px 1px 6px rgba(0, 0, 0, 0.452);
     padding-top: 15px;
 }
@@ -68,7 +70,7 @@ main {
 }
 
 main > article > h1{
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     font-size: 1.8em;
     font-family: var(--fonte-titulo);
 }
@@ -94,7 +96,7 @@ picture {
 }
 
 a {
-    font-family:var(--fonte-cores);
+    font-family:var(--fonte-link);
 }
 
 #creditos {
@@ -107,21 +109,18 @@ a {
 }
 
 aside {
-    background-image: linear-gradient(to right, var(--cor1), var(--cor2),var(--cor3), var(--cor4));
-    padding: 5px;
-    margin: 20px;
-    margin-left: -20px;
-    border-radius: 0px 10px 10px 0px;
-    width: 350px;
-    color: rgb(255, 255, 255);
+    padding: 15px 15px 15px 0px;
+    margin: 20px 20px 20px 0px;
+    border-radius: 10px 10px 10px 10px;
+    color: black;
     font-weight: bold;
-    text-shadow: 3px 1px 6px rgba(0, 0, 0, 0.452);
     font-family: var(--fonte-titulo);
-    box-shadow:  inset 0px 0px 12px 1px rgb(0 0 0 / 15%);
+    font-size: 1.2em;
 }
 
-#extras a{
-    color: white;
+div#extras a{
+    font-size: 0.9em;
+    color: black;
     text-decoration: none;
     font-weight: bold;
 }
@@ -139,10 +138,65 @@ footer {
     padding: 30px;
     font-weight: bold;
     box-shadow:  inset 0px 0px 12px 1px rgb(0 0 0 / 15%);
-    text-shadow: 3px 1px 6px rgba(0, 0, 0, 0.452);
+    text-shadow: 3px 1px 6px rgba(0, 0, 0, 0.514);
     font-family: var(--fonte-cores);
 }
 footer a {
     text-decoration: none;
     color: white;
+}
+
+/*
+    GERADOR DE CORES
+*/
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.colors {
+    display: flex;
+    width: 20%;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn-container {
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2),var(--cor3), var(--cor4));
+    width: 300px;
+    height: 40px;
+    border-radius: 25px; 
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.315);
+    cursor: pointer;
+}
+
+.btn {
+    border: none;
+    font-family: var(--fonte-titulo);
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 1.4em;
+    text-shadow: 2px 2px 3px rgb(0 0 0 / 46%);
+    box-shadow: inset 0px 0px 2px 1px #00000059;
+    color: rgba(12, 12, 12, 0.658);
+    cursor: pointer;
+}
+
+.colors > p {
+    font-size: 0.9em;
+    font-weight: bolder;
+    font-family: var(--fonte-padrao);
+}
+
+#tabela-significados {
+    margin-top: 30px;
 }
