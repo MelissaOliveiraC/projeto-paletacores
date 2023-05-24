@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
-    <title>Palettools</title>
+    <title>PaletteTool</title>
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
-        <h1>Pallettool</h1>
-        <p>Encontre as paletas de cores para seus projetos</p>
+        <h1>PaletteTool</h1>
+        <p>Encontre aqui as paletas de cores ideais para os seus projetos</p>
     </header>
 
     <main>
@@ -36,17 +36,54 @@
             <h3>Veja abaixo algumas de nossas paletas de cores</h3>
 
             
-            <img src="" alt="paleta">
-            <input type="button" value="Copiar para área de transferência">
+            
+                <picture>
+                    <source media="(max-width: 670px)" srcset="imagens/paleta1-pq.png">
+                    <img src="imagens/paleta1.png" alt="Paleta de cor 1">
+                </picture>
 
-            <img src="" alt="paleta">
-            <input type="button" value="Copiar para área de transferência">
+                <div class="container-btn-copiar">
+                    <button class="botao-copiar" data-texto-copiado="#9FA66F #403916 #F2E7AE #A69F7C #261D11">Copiar para area de transferência</button>
+                </div>
 
-            <img src="" alt="paleta">
-            <input type="button" value="Copiar para área de transferência">
 
-            <img src="" alt="paleta">
-            <input type="button" value="Copiar para área de transferência">
+                <picture>
+                    <source media="(max-width: 670px)" srcset="imagens/paleta2-pq.png">
+                    <img src="imagens/paleta2.png" alt="Paleta de cor 2">
+                </picture>
+
+                <div class="container-btn-copiar">
+                    <button class="botao-copiar" data-texto-copiado="#8C5463 #869AA6 #F2A25C #F27E63 #261918">Copiar para area de transferência</button>
+                </div>
+
+
+                <picture>
+                    <source media="(max-width: 670px)" srcset="imagens/paleta3-pq.png">
+                    <img src="imagens/paleta3.png" alt="Paleta de cor 3">
+                </picture>
+
+                <div class="container-btn-copiar">
+                    <button class="botao-copiar" data-texto-copiado="#F2B807 #A66D03 #F2A413 #731702 #590202">Copiar para area de transferência</button>
+                </div>
+
+                <picture>
+                    <source media="(max-width: 670px)" srcset="imagens/paleta4-pq.png">
+                    <img src="imagens/paleta4.png" alt="Paleta de cor 4">
+                </picture>
+
+                <div class="container-btn-copiar">
+                    <button class="botao-copiar" data-texto-copiado="#616F8C #EDF25E #F2EEB6 #D99A4E #73473D">Copiar para area de transferência</button>
+                </div>
+
+                <picture>
+                    <source media="(max-width: 670px)" srcset="imagens/paleta5-pq.png">
+                    <img src="imagens/paleta5.png" alt="Paleta de cor 5">
+                </picture>
+
+                <div class="container-btn-copiar">
+                    <button class="botao-copiar" data-texto-copiado="#555973 #303240 #080A0D #BFAC88 #8C4A32">Copiar para area de transferência</button>
+                </div>
+
         </article>
 
         <h3>Gerador de Cores</h3>
@@ -75,7 +112,7 @@
         </div>
 
         <div id="tabela-significados">
-            <h3>Entenda quando usar cada cor</h3>
+            <h3>Entenda quando usar ou não usar cada cor</h3>
 
             <table>
                 <thead>
@@ -83,75 +120,75 @@
                         <th>Cor</th>
                         <th>Significado</th>
                         <th>Onde usar</th>
-                        <th>Evite Usar</th>
+                        <th>Evite usar</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td id="roxo">Roxo</td>
-                        <td>sig</td>
-                        <td>sig</td>
-                        <td>sig</td>
+                        <td>Mistério, magia, espiritualidade</td>
+                        <td>Estética, astrologia, ioga, espiritualidade, adolescente</td>
+                        <td>Lugares que a atenção tem que ser prendida por muito tempo</td>
                     </tr>
                     <tr>
                         <td id="laranja">Laranja</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>Alegria, vitalidade, prosperidade, sucesso</td>
+                        <td>Entretenimento, call-to-action, eletrônico</td>
+                        <td>Se muito usado pode ser cansativo</td>
                     </tr>
                     <tr>
                         <td id="verde">Verde</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>Esperança, liberdade, saúde, vitalidade</td>
+                        <td>Turismo, natureza, financeiro, relaxamento</td>
+                        <td>Tecnologia, luxo, astrologia</td>
                     </tr>
                     <tr>
                         <td id="marrom">Marrom</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>Seriedade e integridade</td>
+                        <td>Alimentação, animais, finanças, imovéis</td>
+                        <td>É considerada uma cor muito rígida, conservadora</td>
                     </tr>
                     <tr>
                         <td id="branco">Branco</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>Paz, pureza, limpeza</td>
+                        <td>Saúde, tecnologia, luxo, medicina, estética</td>
+                        <td>Não chama muito atenção, precisa de contraste</td>
                     </tr>
                     <tr>
                         <td id="preto">Preto</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>Respeito, luto, isolamento, medo, solidão</td>
+                        <td>Moda, luxo, cósmetico, automobilismo, marketing</td>
+                        <td>Pode gerar medo e até mesmo desconforto</td>
                     </tr>
                     <tr>
                         <td id="amarelo">Amarelo</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>Luz, calor, descontração, otimismo, alegria</td>
+                        <td>Felicidade, destaque, luz, alimentação</td>
+                        <td>Pode indicar que algo é barato ou spam</td>
                     </tr>
                     <tr>
                         <td id="cinza">Cinza</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>Neutralidade, estabilidade</td>
+                        <td>Luxo, efeito calmante, automobilismo, tecnologia</td>
+                        <td>Dá sensação de frieza e melancolia</td>
                     </tr>
                     <tr>
                         <td id="rosa">Rosa</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>Romantismo, ternura, ingenuidade</td>
+                        <td>Cosméticos, expressar suavidade, alimentação</td>
+                        <td>Pode ser muito doce e sentimental</td>
                     </tr>
                     <tr>
                         <td id="vermelho">Vermelho</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>Paixão, energia, excitação</td>
+                        <td>Comida, entretenimento, saúde, moda, automobilismo</td>
+                        <td>Luxo, natureza, financeiro</td>
                     </tr>
                     <tr>
                         <td id="azul">Azul</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>Tranquilidade, serenidade, harmonia</td>
+                        <td>Tecnologia, educação, governo, medicina, ciências</td>
+                        <td>Comida</td>
                     </tr>
                 </tbody>
             </table>

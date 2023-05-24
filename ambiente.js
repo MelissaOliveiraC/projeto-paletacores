@@ -30,3 +30,21 @@ document.getElementById('btn-action').addEventListener('click', () => {
         txt_color.style.fontWeight = "bolder";
     }
 })
+
+//copiar paletas prontas
+
+var botoes = document.getElementsByClassName("botao-copiar");
+
+Array.from(botoes).forEach(function(botao) {
+  botao.addEventListener("click", function() {
+    var texto = this.getAttribute("data-texto-copiado");
+
+    navigator.clipboard.writeText(texto)
+      .then(function() {
+        console.log("Texto copiado com sucesso!");
+      })
+      .catch(function(err) {
+        console.error("Erro ao copiar o texto: ", err);
+      });
+  });
+});
