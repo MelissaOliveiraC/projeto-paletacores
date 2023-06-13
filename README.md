@@ -10,16 +10,17 @@ Uma simples implementação de um site de paletas de cores para auxílio na cons
  
  <br>
 <div align="center">
-  <img src="https://tinypic.host/images/2023/05/24/initial.png" alt="initial.png" border="0">
+  <img src="https://tinypic.host/images/2023/06/13/b09be276-ea11-4b8e-ae34-695fb45ee2d5.png" alt="b09be276-ea11-4b8e-ae34-695fb45ee2d5.png" border="0">
 </div>
 <br>
 <br>
+
 
  ### Gerador de cores 
  
  <br>
 <div align="center">
-  <img src="https://tinypic.host/images/2023/05/24/gerador.png" alt="gerador.png" border="0">
+  <img src="https://tinypic.host/images/2023/06/13/444a1f10-c82a-45d7-aaf0-1085991fea60.png" alt="444a1f10-c82a-45d7-aaf0-1085991fea60.png" border="0">
 </div>
 
 ## 🔧 Tecnologias
